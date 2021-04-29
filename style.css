@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+    --Inter: 'Inter', sans-serif;
+    --Lexend: 'Lexend Deca', sans-serif;
+
+}
+
+body{
+    font-size: 15px;
+    background-color: var(--main-background);
+    color: var(--white);
+    font-family: var(--Inter);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-preview-card{
+    max-width: 1080px;
+    height: 450px;
+    border-radius: 5px;
+    background-color: var(--card-background);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text{
+    margin: 60px 100px 60px 50px;
+}
+
+.paragrafo{
+    margin-top: 30px;
+}
+
+ h2{
+    font-size: 2.2rem;
+}
+
+ span{
+    color: var(--accent);
+}
+
+p{
+
+   font-family: var(--Lexend);
+    font-size: 0.7rem;
+    color: var(--stat-headings);
+
+}
+.numbers{
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.image{
+    padding: 0;
+    margin: 0;
+    background: var(--accent);
+}
+ img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+    
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px
+}
+
+@media(max-width:768px){
+    body{
+        font-size: 12px;
+        min-height: 100vh;
+    }
+
+    .start-preview-card{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .text{
+        margin: 30px;
+        text-align: center;
+    }
+
+    .img{
+        width: 100%;
+        border-radius: 5px  5px 0 0;
+        content: url('/images/image-header-mobile.jpg');
+    }
+
+    .list{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
