@@ -112,7 +112,7 @@ p{
     .card{
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          max-width: 1208px;
+          max-width: 1080px;
           height: 450px;
           grid-template-areas: "a2 a1";
      }
